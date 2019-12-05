@@ -16,6 +16,8 @@ Key points to keep in mind:
 
 ## The Architecture
 
+### Part 1: Spotify
+
 The output of this "system" is tracks added to a Spotify playlist. When a new song appears in a playlist, we have succedeed.
 
 ![Playlist with tracks](./media/playlist-only.png)
