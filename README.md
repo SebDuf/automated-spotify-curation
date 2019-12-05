@@ -35,3 +35,13 @@ We already have the playlist URI, since that is the playlist where we want to ad
 We now have a simple but straightforward system: We have one input (text) and one output (track added to playlist). We can group all of this under one hood: `text-to-spotify-playlist-service`
 
 ![Text to Spotify service](./media/text-to-spotify-service.png)
+
+### Part 2: Youtube
+
+We are halfway to having a working prototype: we have a service that takes text as input and tries to add a song to our Spotify playlist. Now we just need a way to feed text automatically to that service.
+
+While we want to eventually have multiple sources of songs, we'll start with a single one: Youtube. By levaraging Youtubers that upload curated songs to their channels, we can create a master list of channels to check scrap for new songs.
+
+![Youtube channel to text](./media/youtube-initial.png)
+
+Our goal is to have an evolving playlist which gets continually updated, therefore we want to check these channels daily for updates.
